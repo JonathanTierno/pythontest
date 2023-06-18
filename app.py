@@ -26,10 +26,10 @@ def hello_world():
     # Iterar sobre los elementos de artículo y extraer la información deseada
     for article in article_elements:
         name = article.find('span', itemprop = 'itemprop').text
-        sku = article.find('span', itemprop = 'sku').text
-        price = article.find('span', itemprop = 'pprecio').text
+        #sku = article.find('span', itemprop = 'sku').text
+        #price = article.find('span', itemprop = 'pprecio').text
 
         print('Nombre:', name)
-        print('SKU:', sku)
-        print('Precio:', price)
-        print('---')
+        #print('SKU:', sku)
+        #print('Precio:', price)
+        #print('---')
