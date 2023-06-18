@@ -28,7 +28,7 @@ def hello_world():
         divname = article.find('div', class_='accont')
         name = divname.find('span', itemprop_='itemprop')
 
-        print('Nombre:', divname)
+        print('Nombre:', name)
         #print('SKU:', sku)
         #print('Precio:', price)
         #print('---')
