@@ -27,7 +27,7 @@ def hello_world():
     for article in article_elements:
         divname = article.find('div', class_='accont').text
 
-        print 'Nombre:', divname 
+        print('Nombre:', divname)
         #print('SKU:', sku)
         #print('Precio:', price)
         #print('---')
