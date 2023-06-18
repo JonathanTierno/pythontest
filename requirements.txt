@@ -2,3 +2,5 @@ Flask
 Gunicorn
 BeautifulSoup
 webdriver
+time
+requests
