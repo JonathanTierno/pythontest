@@ -1,6 +1,6 @@
 Flask
 Gunicorn
-BeautifulSoup
+beautifulsoup4
 webdriver
 time
 requests
