@@ -18,7 +18,7 @@ def hello_world():
     content = response.content
     
     # Crear un objeto BeautifulSoup con el contenido HTML de la página de listado de artículos
-    soup = BeautifulSoup(driver.content, 'html.parser')
+    soup = BeautifulSoup(content, "html.parser")
 
     # Encontrar todos los elementos de artículo en la página
     article_elements = soup.find_all('div', class_='prod_item')
