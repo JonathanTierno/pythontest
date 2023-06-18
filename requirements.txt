@@ -2,3 +2,4 @@ Flask
 Gunicorn
 beautifulsoup4
 selenium
+requests
