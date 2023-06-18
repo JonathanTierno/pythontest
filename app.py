@@ -25,7 +25,8 @@ def hello_world():
 
     # Iterar sobre los elementos de artículo y extraer la información deseada
     for article in article_elements:
-        divname = article.find('div', class_='accont').text
+        divname = article.find('div', class_='accont')
+        name = divname.find('span', itemprop_='itemprop')
 
         print('Nombre:', divname)
         #print('SKU:', sku)
