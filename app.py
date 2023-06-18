@@ -13,7 +13,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    url = "https://www.danston.com"
+    url = "https://www.danston.com/cartuchos-compatibles-laser/"
     response = requests.get(url)
     content = response.content
     
@@ -25,7 +25,7 @@ def hello_world():
 
     # Iterar sobre los elementos de artículo y extraer la información deseada
     for article in article_elements:
-        name = article.find('span', itemprop = 'itemprop').text
+        name = article.find('span', itemprop = 'itemprop') #.text
         #sku = article.find('span', itemprop = 'sku').text
         #price = article.find('span', itemprop = 'pprecio').text
 
