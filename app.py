@@ -13,9 +13,13 @@ CORS(app)
 @app.route('/run')
 def run_script():
     # Configuración de Selenium
-    options = Options()
-    options.add_argument('--headless')  # Ejecutar Chrome en modo headless
-    driver = webdriver.Chrome(options=options)
+    #options = Options()
+    #options.add_argument('--headless')  # Ejecutar Chrome en modo headless
+    #driver = webdriver.Chrome(options=options)
+
+    options = webdriver.ChromeOptions()
+    options.binary_location = "/usr/lib/chromium-or-chrome-stable-path"
+    driver = webdriver.Chrome(chrome_options=options)
 
     def login():
         username_= 'pabloa@grupoinformatico.com'
